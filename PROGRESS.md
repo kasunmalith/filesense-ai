@@ -40,13 +40,13 @@ Added documentation and regression coverage for protected app-data paths, bounde
 
 ## Stage 10 — Portfolio and Windows packaging
 
-Completed README, architecture/decisions/limitations/testing/security/licensing docs, issue templates, Windows CI and build workflows, PyInstaller spec, bootstrap/build scripts, changelog, screenshot, and portfolio summary. Built a core onedir executable and smoke-launched it. The optional AI-inclusive workflow and public repository setup were not run.
+Completed README, architecture/decisions/limitations/testing/security/licensing docs, issue templates, Windows CI and build workflows, PyInstaller spec, bootstrap/build scripts, changelog, screenshot, and portfolio summary. Built and smoke-launched the core onedir executable. Created the public portfolio repository at [github.com/kasunmalith/filesense-ai](https://github.com/kasunmalith/filesense-ai) and pushed `main`. The AI-inclusive workflow was not run.
 
 ## Final verification (2026-11-20)
 
 - Pytest: **28 passed**.
 - Ruff lint: passed.
-- Ruff format check: passed, 54 files.
+- Ruff format check: passed, 56 files.
 - Python compile check: passed.
 - Source startup smoke: passed.
 - Core PyInstaller onedir build: passed; see `dist\FileSenseAI\FileSenseAI.exe`.

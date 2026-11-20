@@ -15,7 +15,7 @@ Status reflects commands actually run in this workspace on Windows 11 with Pytho
 | 07 | Themes, settings, keyboard/accessibility affordances | Complete; UI and settings tests passed. |
 | 08 | Grounded chat through loopback Ollama | Complete; mock local HTTP, stream, citation, and remote rejection tests passed. No live Ollama/model was used. |
 | 09 | Privacy/safety, regression tests, formatting, performance smoke | Complete; 28 tests and static checks passed. |
-| 10 | Portfolio docs, Windows build workflow, local executable | Complete; core onedir build and bundled `--smoke` launch passed. AI-inclusive CI and public publishing were not run. |
+| 10 | Portfolio docs, Windows build workflow, local executable | Complete; core onedir build and bundled `--smoke` launch passed. Public repository created and `main` pushed. AI-inclusive CI was not run. |
 
 ## Environment and verification
 
@@ -31,4 +31,4 @@ Status reflects commands actually run in this workspace on Windows 11 with Pytho
 
 ## Scope boundaries
 
-Private development prompt TXT files are excluded by `.gitignore`. No model weights, private indexed files, live user directories, or credentials are included. Optional model inference, a live Ollama service, GitHub Actions, code signing, and GitHub publication remain unverified.
+Private development prompt TXT files are excluded by `.gitignore`. No model weights, private indexed files, live user directories, or credentials are included. Optional model inference, a live Ollama service, GitHub Actions, and code signing remain unverified. The public repository is [kasunmalith/filesense-ai](https://github.com/kasunmalith/filesense-ai).

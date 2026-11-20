@@ -26,8 +26,8 @@
 Python 3.12 x64 is the recommended source runtime. Python 3.13 is allowed by the package metadata and is used for local verification when available. Windows 10/11 x64 is the primary target.
 
 ```powershell
-git clone <your-repository-url>
-cd FileSenseAI
+git clone https://github.com/kasunmalith/filesense-ai.git
+cd filesense-ai
 py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
@@ -35,7 +35,7 @@ python -m pip install -e ".[dev,spreadsheet,duplicates,chat]"
 python -m filesense_ai
 ```
 
-Alternatively, run `scripts\\bootstrap_windows.ps1`. To install the extras for optional local text/image AI, use:
+Alternatively, run `scripts\bootstrap_windows.ps1`. To install the extras for optional local text/image AI, use:
 
 ```powershell
 python -m pip install -e ".[semantic,image-ai,spreadsheet,duplicates,chat]"
@@ -83,7 +83,7 @@ Tests use generated documents and images. Normal tests do not download model wei
 The onedir executable is built with PyInstaller. The optional AI extras make the app bundle much larger; model weights and user data remain outside the executable.
 
 ```powershell
-.scripts\build_windows.ps1
+scripts\build_windows.ps1
 ```
 
 The build script installs optional model packages and creates `dist\FileSenseAI\FileSenseAI.exe`. For a smaller keyword-only build, edit the install command in the script to omit `semantic` and `image-ai`; those optional features then require a source installation with those extras. A GitHub Actions Windows build workflow is included. No executable is code signed.
@@ -125,4 +125,4 @@ Original FileSense AI code is MIT licensed. Third-party libraries and model weig
 
 > FileSense AI is a native Python desktop application for private, local-first file discovery. It combines incremental SQLite/FTS5 indexing, optional MiniLM semantic retrieval, matching-space OpenCLIP image search, safe duplicate review, and optional loopback Ollama chat. Core keyword search stays usable without an account or AI model.
 
-Before publishing, replace `<your-repository-url>` in setup instructions if desired and review repository metadata. No GitHub remote is configured by this project.
+Public repository: [github.com/kasunmalith/filesense-ai](https://github.com/kasunmalith/filesense-ai). Review the repository metadata and workflow status when preparing releases.

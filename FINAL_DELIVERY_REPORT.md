@@ -28,4 +28,4 @@ That script installs the optional model libraries before packaging. Model weight
 
 ## Scope and follow-up
 
-This workspace now contains a GitHub-ready project tree, but it has no GitHub remote and has not been published. The local executable is a core build because the large optional AI libraries and weights were not installed here. The AI-inclusive GitHub Actions workflow, real model downloads/inference, live Ollama, code signing, and public publishing remain unverified. See [docs/LIMITATIONS.md](docs/LIMITATIONS.md).
+The project is published as a public portfolio repository at [github.com/kasunmalith/filesense-ai](https://github.com/kasunmalith/filesense-ai). The local executable is a core build because the large optional AI libraries and weights were not installed here. The AI-inclusive GitHub Actions workflow, real model downloads/inference, live Ollama, and code signing remain unverified. See [docs/LIMITATIONS.md](docs/LIMITATIONS.md).
