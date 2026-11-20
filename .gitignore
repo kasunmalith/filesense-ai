@@ -1,0 +1,48 @@
+# Private development inputs from the prompt package
+/prompts/
+/START_HERE_FOR_CODEX.txt
+/ALL_IN_ONE_CODEX_PROMPT.txt
+/CODEX_PASTE_THIS_ONCE.txt
+/README_FOR_YOU_SI.txt
+
+# Python and local environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+
+# User data, generated indexes and model weights
+/models/
+/cache/
+/logs/
+/database/
+/demo-data/
+/screenshots/generated/
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.db
+*.log
+.env
+.env.*
+!.env.example
+
+# Build and package outputs
+/build/
+/dist/
+/output/
+*.spec.bak
+*.exe
+*.msi
+*.zip
+
+# Editor/OS
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
